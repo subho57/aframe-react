@@ -15,29 +15,21 @@
     "webvr"
   ],
   "dependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
     "aframe": "^1.2.0",
     "aframe-animation-component": "^5.1.2",
     "aframe-particle-system-component": "^1.1.3",
     "aframe-react": "^4.4.0",
-    "prettify": "^0.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn run prettify && react-scripts start",
+    "build": "yarn run prettify && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish": "yarn run prettify && react-scripts build && gh-pages -d build",
+    "prettify": "prettier --single-quote --write \"src/**/*.{ts,js,json}\""
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +37,16 @@
       "react-app/jest"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyanka-Chatterjee-2000/aframe-react.git"
+  },
+  "author": "Priyanka Chatterjee <priyanka@trisetra.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Priyanka-Chatterjee-2000/aframe-react/issues"
+  },
+  "homepage": "https://priyanka-chatterjee-2000.github.io/aframe-react",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,5 +58,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.5.1",
+    "react-scripts": "5.0.0",
+    "typescript": "^4.4.2"
   }
 }
