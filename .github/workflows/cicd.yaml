@@ -22,11 +22,11 @@ jobs:
       - name: Install npm packages
         working-directory: /
         run: |
-          npm i -g yarn && yarn
+          npm ci
 
       - name: Build React App
         run: |
-          yarn publish
+          npm publish
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
