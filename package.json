@@ -1,7 +1,7 @@
 {
   "name": "aframe-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "To display panoramic images in aframe with react",
   "keywords": [
     "aframe",
@@ -28,7 +28,7 @@
     "build": "yarn run prettify && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publish": "yarn run prettify && react-scripts build && gh-pages -d build",
+    "publish": "yarn run prettify && react-scripts build",
     "prettify": "prettier --single-quote --write \"src/**/*.{ts,js,json}\""
   },
   "eslintConfig": {
@@ -67,7 +67,6 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
-    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1",
     "react-scripts": "5.0.0",
     "typescript": "^4.4.2"
