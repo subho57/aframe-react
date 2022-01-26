@@ -3,12 +3,13 @@ import 'aframe';
 // @ts-ignore
 import { Entity, Scene } from "aframe-react";
 // import logo from './logo.svg';
-import pano from './assets/pano.jpg';
+import pano from './assets/final_panoramic_render_0001.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <h1>VR</h1>
       <Scene primitive="a-scene" vr-mode-ui="enabled: true">
           <Entity primitive="a-sky" src= {pano} rotation="0 0 0"></Entity>
           <Entity primitive="a-camera">
