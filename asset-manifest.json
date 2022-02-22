@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aframe-react/static/css/main.073c9b0a.css",
+    "main.js": "/aframe-react/static/js/main.3a68d36c.js",
+    "static/js/787.af1b95cd.chunk.js": "/aframe-react/static/js/787.af1b95cd.chunk.js",
+    "static/media/final_panoramic_render_0001.jpg": "/aframe-react/static/media/final_panoramic_render_0001.dbe1740c78200a92eb68.jpg",
+    "index.html": "/aframe-react/index.html",
+    "main.073c9b0a.css.map": "/aframe-react/static/css/main.073c9b0a.css.map",
+    "main.3a68d36c.js.map": "/aframe-react/static/js/main.3a68d36c.js.map",
+    "787.af1b95cd.chunk.js.map": "/aframe-react/static/js/787.af1b95cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3a68d36c.js"
+  ]
+}
