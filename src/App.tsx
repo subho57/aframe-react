@@ -2,7 +2,7 @@ import React from 'react';
 import 'aframe';
 // @ts-ignore
 import { Entity, Scene } from "aframe-react";
-import back from './assets/back.svg';
+// import back from './assets/back.svg';
 import pano from './assets/final_panoramic_render_0001.jpg';
 import './App.css';
 
